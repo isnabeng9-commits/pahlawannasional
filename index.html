@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Pahlawan Nasional</title>
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: aliceblue;
+          margin: 0;
+          padding: 0;
+          color: darkslategray;
+      }
+
+      header {
+          background-color: darkblue;
+          color: white;
+          text-align: center;
+          padding: 30px 15px;
+      }
+
+      header h1 {
+          margin: 0;
+          font-size: 32px;
+      }
+
+      header p {
+          font-size: 16px;
+      }
+
+      .intro {
+          max-width: 900px;
+          margin: 25px auto;
+          padding: 20px;
+          background-color: white;
+          border-radius: 15px;
+          text-align: center;
+          line-height: 1.7;
+      }
+
+      .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          padding: 20px;
+      }
+
+      .card {
+          background-color: white;
+          width: 250px;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 4px 10px lightgray;
+          text-align: center;
+          transition: transform 0.3s;
+      }
+
+      .card:hover {
+          transform: translateY(-5px);
+      }
+
+      .card img {
+          width: 100%;
+          height: 250px;
+          object-fit: contain;
+          background-color: white;
+      }
+
+      .card h2 {
+          color: darkblue;
+          margin: 15px 10px 8px;
+      }
+
+      .card p {
+          padding: 0 15px 15px;
+          line-height: 1.6;
+          font-size: 14px;
+      }
+
+      footer {
+          background-color: darkblue;
+          color: white;
+          text-align: center;
+          padding: 18px;
+          margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>🇮🇩 Galeri Pahlawan Nasional 🇮🇩</h1>
+      <p>Mengenal tokoh-tokoh yang berjasa bagi Indonesia</p>
+    </header>
+
+    <section class="intro">
+      <h2>Mengenal Pahlawan Nasional</h2>
+      <p>
+        Pahlawan nasional adalah tokoh yang berjasa bagi bangsa dan negara
+        Indonesia. Mereka berjuang dengan keberanian, pengorbanan, dan semangat
+        persatuan demi kemerdekaan serta kemajuan Indonesia. Mari kita mengenal
+        perjuangan mereka dan meneladani semangatnya!
+      </p>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Presiden_Sukarno.jpg"
+          alt="Soekarno"
+        />
+        <h2>Soekarno</h2>
+        <p>
+          Soekarno adalah presiden pertama Indonesia. Beliau bersama Mohammad
+          Hatta memproklamasikan kemerdekaan Indonesia pada 17 Agustus 1945.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Mohammad_Hatta_1950.jpg"
+          alt="Mohammad Hatta"
+        />
+        <h2>Mohammad Hatta</h2>
+        <p>
+          Mohammad Hatta adalah wakil presiden pertama Indonesia dan salah satu
+          tokoh proklamator kemerdekaan. Beliau dikenal sebagai Bapak Koperasi
+          Indonesia.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Raden Ajeng Kartini"
+        />
+        <h2>R.A. Kartini</h2>
+        <p>
+          R.A. Kartini dikenal karena perjuangannya untuk memperluas kesempatan
+          pendidikan dan meningkatkan kedudukan perempuan Indonesia.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Cut Nyak Dhien"
+        />
+        <h2>Cut Nyak Dhien</h2>
+        <p>
+          Cut Nyak Dhien merupakan pahlawan perempuan dari Aceh yang gigih
+          memimpin perlawanan terhadap penjajahan Belanda.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Diponegoro.jpg"
+          alt="Pangeran Diponegoro"
+        />
+        <h2>Pangeran Diponegoro</h2>
+        <p>
+          Pangeran Diponegoro memimpin Perang Jawa pada tahun 1825–1830 untuk
+          melawan kekuasaan kolonial Belanda.
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Ki_Hadjar_Dewantara.jpg"
+          alt="Ki Hajar Dewantara"
+        />
+        <h2>Ki Hajar Dewantara</h2>
+        <p>
+          Ki Hajar Dewantara merupakan tokoh pendidikan Indonesia dan pendiri
+          Taman Siswa. Beliau dikenal sebagai Bapak Pendidikan Nasional.
+        </p>
+      </div>
+    </section>
+    <div class="card">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU7kFsMiQmskMnNdgIF48UNr3jHMoFCMdgxfJNh3B6LA&s=10"
+        alt="TGKH. M. Zainuddin Abdul Madjid"
+      />
+      <h2>TGKH. M. Zainuddin Abdul Madjid</h2>
+      <p>
+        Provinsi Nusa Tenggara Barat (NTB) memiliki dua tokoh yang telah
+        ditetapkan sebagai Pahlawan Nasional: • TGKH. M. Zainuddin Abdul Madjid
+        (Maulana Syaikh) • Asal: Pancor, Lombok Timur (mewakili Pulau Lombok). •
+        Peran: Ulama besar, pendiri organisasi Islam Nahdlatul Wathan (NW),
+        serta pelopor pendidikan dan perjuangan kemerdekaan. • Penetapan:
+        Dianugerahi gelar Pahlawan Nasional pada 9 November 2017 melalui Keppres
+        No. 115/TK/Tahun 2017.
+      </p>
+    </div>
+
+    <footer>
+      <p>🇮🇩 Jasamu Akan Selalu Dikenang, Pahlawan Indonesia! 🇮🇩</p>
+      <p>Belajar sejarah, meneladani perjuangan, membangun masa depan.</p>
+    </footer>
+  </body>
+</html>
